@@ -10,6 +10,7 @@ export default function Understanding() {
     event.preventDefault();
 
     console.log("understanding: ", understanding);
+    // adding understanding to reducer and moving to support question
     dispatch({ type: "ADD_UNDERSTANDING", payload: understanding });
     history.push("/support");
   };

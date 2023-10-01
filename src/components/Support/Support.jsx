@@ -10,6 +10,7 @@ export default function Support() {
     event.preventDefault();
 
     console.log("support: ", support);
+    // adding support to the reducer and moving to comment page
     dispatch({ type: "ADD_SUPPORT", payload: support });
     history.push("/comments");
   };

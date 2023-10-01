@@ -10,6 +10,7 @@ export default function Home() {
     event.preventDefault();
 
     console.log("feeling: ", feeling);
+    // add feeling to reducer and move to the understanding question
     dispatch({ type: "ADD_FEELING", payload: feeling });
     history.push("/understanding");
   };

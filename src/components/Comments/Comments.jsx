@@ -10,6 +10,7 @@ export default function Comments() {
     event.preventDefault();
 
     console.log("comments: ", comments);
+    // add comments to reducer and move to the review page
     dispatch({ type: "ADD_COMMENTS", payload: comments });
     history.push("/review");
   };
