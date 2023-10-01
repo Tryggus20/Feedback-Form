@@ -9,10 +9,14 @@ export default function Understanding() {
   const addUnderstanding = (event) => {
     event.preventDefault();
 
-    console.log("understanding: ", understanding);
-    // adding understanding to reducer and moving to support question
-    dispatch({ type: "ADD_UNDERSTANDING", payload: understanding });
-    history.push("/support");
+    if (understanding !== "") {
+      console.log("understanding: ", understanding);
+      // add understanding to reducer and move to the understanding question
+      dispatch({ type: "ADD_UNDERSTANDING", payload: understanding });
+      history.push("/support");
+    } else {
+      alert("Please fill in the input field before continuing.");
+    }
   };
   const handleUnderstandingChange = (event) => {
     setUnderstanding(event.target.value);

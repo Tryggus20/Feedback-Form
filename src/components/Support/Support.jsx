@@ -8,11 +8,14 @@ export default function Support() {
   const history = useHistory();
   const addSupport = (event) => {
     event.preventDefault();
-
-    console.log("support: ", support);
-    // adding support to the reducer and moving to comment page
-    dispatch({ type: "ADD_SUPPORT", payload: support });
-    history.push("/comments");
+    if (support !== "") {
+      console.log("support: ", support);
+      // add support to reducer and move to the understanding question
+      dispatch({ type: "ADD_SUPPORT", payload: support });
+      history.push("/comments");
+    } else {
+      alert("Please fill in the input field before continuing.");
+    }
   };
   const handleSupportChange = (event) => {
     setSupport(event.target.value);

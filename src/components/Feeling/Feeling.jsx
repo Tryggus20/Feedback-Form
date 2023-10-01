@@ -2,17 +2,21 @@ import { useHistory } from "react-router-dom";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 
-export default function Home() {
+export default function Feeling() {
   const dispatch = useDispatch();
   const [feeling, setFeeling] = useState("");
   const history = useHistory();
   const addFeeling = (event) => {
     event.preventDefault();
 
-    console.log("feeling: ", feeling);
-    // add feeling to reducer and move to the understanding question
-    dispatch({ type: "ADD_FEELING", payload: feeling });
-    history.push("/understanding");
+    if (feeling !== "") {
+      console.log("feeling: ", feeling);
+      // add feeling to reducer and move to the understanding question
+      dispatch({ type: "ADD_FEELING", payload: feeling });
+      history.push("/understanding");
+    } else {
+      alert("Please fill in the input field before continuing.");
+    }
   };
   const handleFeelingChange = (event) => {
     setFeeling(event.target.value);
