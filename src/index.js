@@ -13,7 +13,7 @@ const initialState = {
   support: "",
   comments: "",
 };
-// trying just 1 reducer for all 4 inputs
+// trying just 1 reducer for all 4 inputs. mission success!
 const feedbackReducer = (state = initialState, action) => {
   console.log("Current State:", state);
   console.log("Action Type:", action.type);
@@ -29,6 +29,8 @@ const feedbackReducer = (state = initialState, action) => {
       return { ...state, support: action.payload };
     case "ADD_COMMENTS":
       return { ...state, comments: action.payload };
+      case "CLEAR_FEEDBACK":
+      return initialState
     default:
       return state;
   }

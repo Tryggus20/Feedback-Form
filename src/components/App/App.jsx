@@ -1,5 +1,6 @@
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import axios from "axios";
+import { useEffect } from "react";
 import Feeling from "../Feeling/Feeling";
 import Understanding from "../Understanding/Understanding";
 import Support from "../Support/Support";
@@ -10,11 +11,11 @@ import ThankYou from "../ThankYou/ThankYou";
 import "./App.css";
 
 function App() {
-  const dispatch = useDispatch;
+  const dispatch = useDispatch();
   const displayFeedback = () => {
-    // //////////////////
+// get function to make sure the database is connected correctly
     axios
-      .get("/")
+      .get("/feedback")
       .then((response) => {
         console.log(response.data);
         dispatch({ type: "SET_ALL_FEEDBACK", payload: response.data });
@@ -23,6 +24,11 @@ function App() {
         console.log("error on GET to display feedback reducer", error);
       });
   };
+
+  useEffect(() => {
+    displayFeedback()
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
