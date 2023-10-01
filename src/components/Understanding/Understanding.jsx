@@ -1,5 +1,4 @@
 import { useHistory } from "react-router-dom";
-import { Dispatch } from "react";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 
@@ -9,10 +8,9 @@ export default function Understanding() {
   const history = useHistory();
   const addUnderstanding = (event) => {
     event.preventDefault();
-    const understandingToAdd = {
-      understanding,
-    };
-    dispatch({ type: "ADD_UNDERSTANDING", payload: understandingToAdd });
+   
+    console.log("understanding: ", understanding);
+    dispatch({ type: "ADD_UNDERSTANDING", payload: understanding });
     history.push("/support");
   };
   const handleUnderstandingChange = (event) => {

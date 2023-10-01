@@ -1,5 +1,4 @@
 import { useHistory } from "react-router-dom";
-import { Dispatch } from "react";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 
@@ -9,10 +8,9 @@ export default function Home() {
   const history = useHistory();
   const addFeeling = (event) => {
     event.preventDefault();
-    const feelingToAdd = {
-      feeling,
-    };
-    dispatch({ type: "ADD_FEELING", payload: feelingToAdd });
+   
+    console.log("feeling: ",feeling);
+    dispatch({ type: "ADD_FEELING", payload: feeling });
     history.push("/understanding");
   };
   const handleFeelingChange = (event) => {
