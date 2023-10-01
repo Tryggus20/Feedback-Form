@@ -7,7 +7,6 @@ import { createStore, combineReducers, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
 import logger from "redux-logger";
 
-
 // trying just 1 reducer to rule them all!
 const feedbackReducer = (state = [], action) => {
   switch (action.type) {
