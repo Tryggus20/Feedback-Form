@@ -8,7 +8,7 @@ export default function Support() {
   const history = useHistory();
   const addSupport = (event) => {
     event.preventDefault();
-   
+
     console.log("support: ", support);
     dispatch({ type: "ADD_SUPPORT", payload: support });
     history.push("/comments");

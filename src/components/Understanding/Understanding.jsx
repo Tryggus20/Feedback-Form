@@ -8,7 +8,7 @@ export default function Understanding() {
   const history = useHistory();
   const addUnderstanding = (event) => {
     event.preventDefault();
-   
+
     console.log("understanding: ", understanding);
     dispatch({ type: "ADD_UNDERSTANDING", payload: understanding });
     history.push("/support");

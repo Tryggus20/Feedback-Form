@@ -5,6 +5,7 @@ import Feeling from "../Feeling/Feeling";
 import Understanding from "../Understanding/Understanding";
 import Support from "../Support/Support";
 import Comments from "../Comments/Comments";
+import Review from "../Review/Review";
 
 import "./App.css";
 
@@ -28,14 +29,14 @@ function App() {
 
           <Route path="/support">
             <Support />
-            </Route>
+          </Route>
 
           <Route path="/comments" exact>
             <Comments />
           </Route>
 
           <Route path="/review" exact>
-            {/* <Review /> */}
+            <Review />
           </Route>
 
           <Route path="/thankYou" exact>

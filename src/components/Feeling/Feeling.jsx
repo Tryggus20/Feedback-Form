@@ -8,8 +8,8 @@ export default function Home() {
   const history = useHistory();
   const addFeeling = (event) => {
     event.preventDefault();
-   
-    console.log("feeling: ",feeling);
+
+    console.log("feeling: ", feeling);
     dispatch({ type: "ADD_FEELING", payload: feeling });
     history.push("/understanding");
   };

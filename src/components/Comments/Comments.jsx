@@ -8,7 +8,7 @@ export default function Comments() {
   const history = useHistory();
   const addComments = (event) => {
     event.preventDefault();
-   
+
     console.log("comments: ", comments);
     dispatch({ type: "ADD_COMMENTS", payload: comments });
     history.push("/review");
@@ -21,11 +21,7 @@ export default function Comments() {
       <h1>Any comments you want to leave?</h1>
       <br />
       <p>Comments:</p>
-      <input
-        type="text"
-        value={comments}
-        onChange={handleCommentsChange}
-      />
+      <input type="text" value={comments} onChange={handleCommentsChange} />
       <button type="button" onClick={addComments}>
         NEXT
       </button>
