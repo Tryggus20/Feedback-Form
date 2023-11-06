@@ -2,6 +2,8 @@ import { useSelector } from "react-redux";
 import { useHistory } from "react-router-dom/cjs/react-router-dom";
 import { useDispatch } from "react-redux";
 import axios from "axios";
+import { Container, Row, Col, Button, Table } from 'react-bootstrap';
+
 export default function Review() {
   const history = useHistory();
   const dispatch = useDispatch();
@@ -22,17 +24,32 @@ export default function Review() {
   };
 
   return (
-    <>
-      <h1>Review Your Feedback</h1>
-      <br />
-      <div key={feedback.id}>
-        <p>Feeling: {feedback.feeling}</p>
-        <p>Understanding: {feedback.understanding}</p>
-        <p>Support: {feedback.support}</p>
-        <p>Comments: {feedback.comments}</p>
+    <Container>
+      <h1 className="text-center">Review Your Feedback</h1>
+      <div className="tableHolder">
+      <Table striped bordered hover className="custom-table">
+        <tbody>
+          <tr>
+            <td className="text-left">Feeling:</td>
+            <td>{feedback.feeling}</td>
+          </tr>
+          <tr>
+            <td className="text-left">Understanding:</td>
+            <td>{feedback.understanding}</td>
+          </tr>
+          <tr>
+            <td className="text-left">Support:</td>
+            <td>{feedback.support}</td>
+          </tr>
+          <tr>
+            <td className="text-left">Comments:</td>
+            <td>{feedback.comments}</td>
+          </tr>
+        </tbody>
+      </Table>
       </div>
-
-      <button onClick={submitFeedback}>Submit</button>
-    </>
+      <br />
+      <Button onClick={submitFeedback}>Submit</Button>
+    </Container>
   );
 }

@@ -21,3 +21,9 @@
 h4 {
   font-style: italic;
 }
+.table {
+text-align: left;}
+
+.custom-table {
+  margin: 0 auto;
+}

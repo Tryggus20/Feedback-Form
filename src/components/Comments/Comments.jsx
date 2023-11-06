@@ -1,6 +1,8 @@
 import { useHistory } from "react-router-dom";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
+import { Form, Button } from 'react-bootstrap';
+
 
 export default function Comments() {
   const dispatch = useDispatch();
@@ -21,11 +23,20 @@ export default function Comments() {
     <>
       <h1>Any comments you want to leave?</h1>
       <br />
-      <p>Comments:</p>
-      <input type="text" value={comments} onChange={handleCommentsChange} />
-      <button type="button" onClick={addComments}>
-        NEXT
-      </button>
+      <Form>
+        <Form.Group controlId="comments">
+          <Form.Label>Comments: </Form.Label>
+          <Form.Control
+            type="text"
+            value={comments}
+            onChange={handleCommentsChange}
+          />
+        </Form.Group>
+        </Form>
+        <br />
+        <Button type="button" onClick={addComments}>
+          NEXT
+        </Button>
     </>
   );
 }
