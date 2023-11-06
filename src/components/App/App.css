@@ -1,7 +1,10 @@
 .App {
   text-align: center;
 }
+body{
+  background-color: #CCCCCC;
 
+}
 .App-header {
   background-color: #033076;
   min-height: 70px;
@@ -26,4 +29,19 @@ text-align: left;}
 
 .custom-table {
   margin: 0 auto;
+}
+/* CSS */
+.button {
+  background-color: #033076; /* Normal button color */
+  color: #fff; /* Text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.button:hover {
+  background-color: #2980b9; /* Button color on hover */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Hover effect: box shadow */
 }

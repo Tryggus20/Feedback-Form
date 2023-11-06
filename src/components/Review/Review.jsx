@@ -49,7 +49,7 @@ export default function Review() {
       </Table>
       </div>
       <br />
-      <Button onClick={submitFeedback}>Submit</Button>
+      <Button className="button" onClick={submitFeedback}>Submit</Button>
     </Container>
   );
 }

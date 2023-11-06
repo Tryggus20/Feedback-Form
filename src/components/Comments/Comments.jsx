@@ -34,7 +34,7 @@ export default function Comments() {
         </Form.Group>
         </Form>
         <br />
-        <Button type="button" onClick={addComments}>
+        <Button type="button" className="button" onClick={addComments}>
           NEXT
         </Button>
     </>

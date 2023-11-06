@@ -1,7 +1,7 @@
 import { useHistory } from "react-router-dom";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { Form, Row, Col, InputGroup } from 'react-bootstrap';
+import { Form, Row, Col, InputGroup, Button } from 'react-bootstrap';
 
 
 export default function Understanding() {
@@ -52,9 +52,9 @@ export default function Understanding() {
         </Form.Group>
       </Form>
       <br />
-      <button type="button" onClick={addUnderstanding}>
+      <Button type="button" onClick={addUnderstanding}>
         NEXT
-      </button>
+      </Button>
     </>
   );
 }

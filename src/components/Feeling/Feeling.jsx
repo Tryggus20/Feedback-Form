@@ -1,7 +1,7 @@
 import { useHistory } from "react-router-dom";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { Form, Row, Col, InputGroup } from 'react-bootstrap';
+import { Form, Row, Col, InputGroup, Button } from 'react-bootstrap';
 
 
 export default function Feeling() {
@@ -53,9 +53,9 @@ export default function Feeling() {
         </Form.Group>
       </Form>
       <br />
-      <button type="button" onClick={addFeeling}>
+      <Button type="button" className="button" onClick={addFeeling}>
         NEXT
-      </button>
+      </Button>
     </>
   );
 }

@@ -1,7 +1,7 @@
 import { useHistory } from "react-router-dom";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { Form, Row, Col, InputGroup } from 'react-bootstrap';
+import { Form, Row, Col, InputGroup, Button } from 'react-bootstrap';
 
 
 export default function Support() {
@@ -51,9 +51,9 @@ export default function Support() {
         </Form.Group>
       </Form>
       <br />
-      <button type="button" onClick={addSupport}>
+      <Button type="button" className="button" onClick={addSupport}>
         NEXT
-      </button>
+      </Button>
     </>
   );
 }

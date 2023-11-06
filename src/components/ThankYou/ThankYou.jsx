@@ -1,4 +1,6 @@
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { Button } from 'react-bootstrap';
+
 
 export default function ThankYou() {
   const history = useHistory();
@@ -13,7 +15,7 @@ export default function ThankYou() {
       <br />
       <br />
       <p>Take it again?</p>
-      <button onClick={beginAgain}>Take Survey</button>
+      <Button className="button" onClick={beginAgain}>Take Survey</Button>
     </div>
   );
 }
