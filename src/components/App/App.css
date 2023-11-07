@@ -1,16 +1,36 @@
 .App {
   text-align: center;
+  background-color: #f7f7f7;
 }
-body{
-  background-color: #CCCCCC;
-
+body {
+  background-color: #cccccc;
+}
+.App-content {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: 0 auto;
 }
 .App-header {
-  background-color: #033076;
-  min-height: 70px;
+  background-color: #007bff;
   padding: 20px;
-  color: white;
+  color: #fff;
   margin-bottom: 20px;
+}
+.App-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.App-subtitle {
+  font-style: italic;
+  font-size: 1.2em;
+  margin-top: 0;
+  color: #f0f0f0;
+}
+td {
+  border-bottom: solid;
 }
 
 .App-title {
@@ -25,23 +45,223 @@ h4 {
   font-style: italic;
 }
 .table {
-text-align: left;}
+  text-align: left;
+}
 
 .custom-table {
   margin: 0 auto;
 }
-/* CSS */
-.button {
-  background-color: #033076; /* Normal button color */
-  color: #fff; /* Text color */
+
+.Comments-container {
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.Comments-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.Comments-button {
+  background-color: #007bff;
+  color: #fff;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth color transition */
+  transition: background-color 0.3s ease;
 }
 
-.button:hover {
-  background-color: #2980b9; /* Button color on hover */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Hover effect: box shadow */
+.Comments-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.Feeling-container {
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.Feeling-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.Feeling-rating {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Feeling-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Feeling-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.Review-container {
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.Review-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.tableHolder {
+  margin-top: 20px;
+}
+
+.custom-table {
+  text-align: left;
+}
+
+.Review-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Review-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.Support-container {
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.Support-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.Support-rating {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Support-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Support-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.FormLabel {
+  font-size: 18px;
+}
+
+.custom-radio {
+  transform: scale(1.2); /* Adjust the scale value as needed */
+  margin-right: 10px; /* Add spacing between radio buttons */
+}
+.ThankYou-container {
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.ThankYou-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.ThankYou-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.ThankYou-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ThankYou-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.Understanding-container {
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.Understanding-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.Understanding-rating {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Understanding-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Understanding-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }

@@ -26,8 +26,8 @@ export default function Feeling() {
     setFeeling(newRating);
   };
   return (
-    <>
-      <h1>How are you feeling today?</h1>
+    <div className="Feeling-container">
+      <h1 className="Feeling-heading">How are you feeling today?</h1>
       <br />
       <Form>
       <Form.Group as={Row} controlId="formRating">
@@ -47,15 +47,15 @@ export default function Feeling() {
                 onChange={handleRatingChange}
               />
             ))}
-            <p>{feeling}</p>
+            <p className="Feeling-rating">{feeling}</p>
           </InputGroup>
         </Col>
         </Form.Group>
       </Form>
       <br />
-      <Button type="button" className="button" onClick={addFeeling}>
+      <Button type="button" className="Feeling-button" onClick={addFeeling}>
         NEXT
       </Button>
-    </>
+    </div>
   );
 }

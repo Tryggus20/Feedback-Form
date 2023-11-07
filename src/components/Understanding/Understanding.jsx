@@ -25,8 +25,8 @@ export default function Understanding() {
     setUnderstanding(newRating);
   };
   return (
-    <>
-      <h1>How well are you understanding the content?</h1>
+    <div className="Understanding-container">
+      <h1 className="Understanding-heading">How well are you understanding the content?</h1>
       <br />
       <Form>
       <Form.Group as={Row} controlId="formRating">
@@ -44,17 +44,18 @@ export default function Understanding() {
                 value={value}
                 checked={understanding === value}
                 onChange={handleRatingChange}
+                className=".custom-radio"
               />
             ))}
-            <p>{understanding}</p>
+            <p className="Understanding-rating">{understanding}</p>
           </InputGroup>
         </Col>
         </Form.Group>
       </Form>
       <br />
-      <Button type="button" onClick={addUnderstanding}>
+      <Button type="button" className="button Understanding-button" onClick={addUnderstanding}>
         NEXT
       </Button>
-    </>
+    </div>
   );
 }

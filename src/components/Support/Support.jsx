@@ -24,8 +24,8 @@ export default function Support() {
     setSupport(newRating);
   };
   return (
-    <>
-      <h1>How well are you being supported?</h1>
+    <div className="Support-container">
+      <h1 className="Support-heading">How well are you being supported?</h1>
       <br />
       <Form>
       <Form.Group as={Row} controlId="formRating">
@@ -45,15 +45,15 @@ export default function Support() {
                 onChange={handleRatingChange}
               />
             ))}
-            <p>{support}</p>
+            <p className="Support-rating">{support}</p>
           </InputGroup>
         </Col>
         </Form.Group>
       </Form>
       <br />
-      <Button type="button" className="button" onClick={addSupport}>
+      <Button type="button" className="Support-button" onClick={addSupport}>
         NEXT
       </Button>
-    </>
+    </div>
   );
 }

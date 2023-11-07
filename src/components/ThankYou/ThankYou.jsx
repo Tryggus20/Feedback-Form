@@ -10,12 +10,12 @@ export default function ThankYou() {
     history.push("/");
   };
   return (
-    <div>
-      <h1>Thank you for filling out the survey!</h1>
+    <div className="ThankYou-container">
+      <h1 className="ThankYou-heading">Thank you for filling out the survey!</h1>
       <br />
       <br />
-      <p>Take it again?</p>
-      <Button className="button" onClick={beginAgain}>Take Survey</Button>
+      <p className="ThankYou-text">Take it again?</p>
+      <Button className="ThankYou-button" onClick={beginAgain}>Take Survey</Button>
     </div>
   );
 }

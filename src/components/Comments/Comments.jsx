@@ -20,8 +20,8 @@ export default function Comments() {
     setComments(event.target.value);
   };
   return (
-    <>
-      <h1>Any comments you want to leave?</h1>
+    <div className="Comments-container">
+      <h1 className="Comments-heading">Any comments you want to leave?</h1>
       <br />
       <Form>
         <Form.Group controlId="comments">
@@ -34,9 +34,9 @@ export default function Comments() {
         </Form.Group>
         </Form>
         <br />
-        <Button type="button" className="button" onClick={addComments}>
+        <Button type="button" className="Comments-button" onClick={addComments}>
           NEXT
         </Button>
-    </>
+    </div>
   );
 }

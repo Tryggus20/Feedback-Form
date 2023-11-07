@@ -24,8 +24,8 @@ export default function Review() {
   };
 
   return (
-    <Container>
-      <h1 className="text-center">Review Your Feedback</h1>
+    <Container className="Review-container">
+      <h1 className="Review-heading">Review Your Feedback</h1>
       <div className="tableHolder">
       <Table striped bordered hover className="custom-table">
         <tbody>
@@ -33,14 +33,17 @@ export default function Review() {
             <td className="text-left">Feeling:</td>
             <td>{feedback.feeling}</td>
           </tr>
+          <br />
           <tr>
             <td className="text-left">Understanding:</td>
             <td>{feedback.understanding}</td>
           </tr>
+          <br />
           <tr>
             <td className="text-left">Support:</td>
             <td>{feedback.support}</td>
           </tr>
+          <br />
           <tr>
             <td className="text-left">Comments:</td>
             <td>{feedback.comments}</td>
@@ -49,7 +52,7 @@ export default function Review() {
       </Table>
       </div>
       <br />
-      <Button className="button" onClick={submitFeedback}>Submit</Button>
+      <Button className="Review-button" onClick={submitFeedback}>Submit</Button>
     </Container>
   );
 }
