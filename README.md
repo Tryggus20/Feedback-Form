@@ -1,5 +1,3 @@
-(View Raw will give you the markdown that you can copy to your repos!)
-
 
 ![MIT LICENSE](https://img.shields.io/github/license/scottbromander/the_marketplace.svg?style=flat-square)
 ![REPO SIZE](https://img.shields.io/github/repo-size/scottbromander/the_marketplace.svg?style=flat-square)
@@ -25,7 +23,7 @@ This webpage is a feedback survey for a teacher. It lets the teacher know how th
 5. The `npm run client` command will open up a new browser tab for you!
 
 ## Usage
-Use to get anonymous feedback from students.
+Use to get anonymous feedback from students or employees.
 
 
 ## Built With
